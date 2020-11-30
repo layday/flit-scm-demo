@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core ~=3.0", "setuptools_scm ~=4.0"]
+build-backend = "flit_scm_backend:buildapi"
+backend-path = ["flit_scm_backend"]
+
+[tool.flit.metadata]
+module = "demo"
+author = "layday"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+
+[tool.flit.sdist]
+include = ["flit_scm_backend", "demo/_version.py"]
